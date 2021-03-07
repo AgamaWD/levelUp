@@ -1,0 +1,216 @@
+@media (max-width: 1200px){
+
+    .container {
+        padding: 50px 20px;
+    }
+
+	.promo_background video {
+        display: none;
+    }
+
+    .composition_section {
+        padding-bottom: 30px;
+    }
+
+    .composition_section .container {
+        padding: 30px 20px;
+    }
+
+    .composition_prod_photo {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .composition_prod_btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ing_item .btn {
+        display: none;
+    }
+
+    .ing_info {
+        margin-bottom: 0;
+    }
+
+    .ing_item {
+        background-color: rgba(245,245,245,0.1);
+        padding: 15px;
+        border-radius: 15px;
+        transition: none;
+    }
+    
+    .ing_item:hover {
+        background: rgba(245,245,245,0.1);
+        transition: none;
+    }
+
+    .arrow_prev:hover, .arrow_next:hover {
+        background-color: rgba(0,0,0, 0);
+        color: #616161;
+        transition: none;
+    }
+
+    .description_section .container {
+        padding: 50px 20px;
+    }
+
+    .doctor_photo {
+        top: 40%;
+        width: 47%;
+    }
+
+    .form {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 900px){
+    .btn {
+        width: 200px;
+    }
+
+    .characteristics {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .char_items {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .char_item span {
+        font-size: 1.5rem;
+    }
+
+    .composition_photo_wrap {
+        display: none;
+    }
+
+    .ing_item {
+        background-color: rgba(245,245,245,0);
+    }
+
+    .ing_item:hover {
+        background: rgba(245,245,245,0);
+    }
+
+    .ing_item:not(:last-child) {
+        margin-bottom: 50px
+    }
+
+    .ing_info img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ing_info span {
+        font-size: 1.3rem;
+    }
+
+    .review_title {
+        font-size: 3rem;
+    }
+
+    .arrow_prev, .arrow_next {
+        line-height: 675px;
+    }
+
+    .user_name {
+        padding: 0;
+    }
+
+    .user_review {
+        padding: 20px 0;
+    }
+
+    .doctor_photo {
+        display: none;
+    }
+
+    .prod_description {
+        max-width: 100%;
+    }
+
+    .form {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 600px){
+
+    .main_title {
+        margin: 0px auto 40px;
+        font-size: 3rem;
+    }
+
+    .characteristics img {
+        max-width: 45%;
+    }
+
+    .char_item {
+        padding: 1rem 0;
+        height: 3rem;
+    }
+
+    .char_item span {
+        height: 1.2rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+
+    }
+
+    .composition_section .container {
+        flex-direction: column;
+    }
+
+    .ing_item:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .quality {
+        width: max-content;
+        flex-direction: column;
+    }
+
+    .quality:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    .quality_item:not(:first-child) {
+        margin-left: 0;
+    }
+
+    .order_title {
+        font-size: 3rem;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .timer_wrap {
+        margin: 50px auto 50px;
+    }
+
+    .timer_title {
+        font-size: 1.3rem;
+    }
+
+    .order {
+        display: block;
+    }
+
+    .order_photo {
+        height: 320px;
+        margin-bottom: 40px;
+    }
+
+    .form {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}

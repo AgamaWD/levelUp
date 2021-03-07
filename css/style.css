@@ -1,0 +1,495 @@
+/*.dark-primary-color    { background: #616161; }
+.default-primary-color { background: #9E9E9E; }
+.light-primary-color   { background: #F5F5F5; }
+КНОПКИ/АКЦЕНТЫ        { background: #E040FB; }
+Тёмный текст   { color: #212121; }
+Серый текст  { color: #757575; }
+выделение элементов       { border-color: #BDBDBD; }*/
+
+/*Анимация новой цены*/
+@keyframes price_animation {
+    0% {
+        color:  #212121;
+        transform: scale(1);
+    }
+    50% {
+        color: #38063E;
+        transform: scale(1.3);
+    }
+    100% {
+        color: #212121;
+        transform: scale(1);
+    }
+}
+
+/*Общие настройки*/
+
+html {
+    font-size: 16px;
+    color: #212121;
+}
+
+.section {
+    width: 100%;
+    height: auto;
+}
+
+.background {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1640px;
+    width: 100%;
+    padding: 100px 20px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+.flex_wrap {
+    display: flex;
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+}
+
+.text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem; 
+}
+
+.btn {
+    background-color: #E040FB;
+    text-transform: uppercase;
+    border-radius: 10px;
+    width: 300px;
+    height: 3rem;
+}
+
+.btn:active {
+    background-color: #3A063F;
+    color: #F5F5F5;
+}
+
+.btn:hover, .btn:active {
+    border: solid 1px #212121;
+}
+
+/*Блок 1 - Промо*/
+
+.promo_section {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+}
+
+.promo_background {
+    background-image: url(../images/poster.jpg);
+}
+
+.promo_background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_title {
+    margin: 0 auto 120px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.characteristics {
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    min-height: 451px;
+}
+
+.char_text {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.char_items {
+    margin-bottom: 90px;
+}
+
+.char_item {
+    display: flex;
+    padding: 2rem 0;
+    height: 6rem;
+    align-items: center;
+}
+
+.char_item img {
+    width: auto;
+    height: 25px;
+}
+
+.char_item span {
+    font-size: 1.8rem;
+    display: inline-block;
+    height: 2rem;
+    margin-left: 15px;
+}
+
+/*Блок 2 - Состав продукта*/
+
+.composition_section {
+    background: #9e9e9e;
+    background: radial-gradient(circle, #9e9e9e 0%, #F5F5F5 100%);
+}
+
+.composition_section .container {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ing_item {
+    background-color: rgba(245,245,245,0.1);
+    padding: 15px;
+    border-radius: 15px;
+    transition: background-color .2s linear;
+}
+
+.ing_item:hover {
+    background: rgba(245,245,245,1);
+    transition: background-color .2s linear;
+}
+
+.ing_item .btn {
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.ing_item:hover .btn {
+    opacity: 1;
+    transition: opacity .2s linear;
+}
+
+.ing_item:not(:last-child) {
+    margin-bottom: 100px;
+}
+
+.ing_info {
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.ing_info img {
+    width: 80px;
+    height: 80px;
+    border: solid 3px #3A063F;
+    border-radius: 100%;
+}
+
+.ing_info span {
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.composition_prod_btn {
+    display: none;
+}
+
+/*Блок 3 - Отзывы*/
+
+.review_section {
+    background-color: #F2F2F2;
+}
+
+.review_title {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 auto 40px;
+}
+
+.carousel_wrap {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto;
+}
+
+.carousel_item {
+    min-width: 100%;
+    display: none;
+}
+
+.carousel_item:first-child {
+    display: block;
+}
+
+.user_photo {
+    width: 100%;
+    height: auto;
+}
+
+.user_name {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.user_review {
+    padding: 0 20px 20px;
+    line-height: 1.5;
+
+}
+
+.arrow_prev {
+    color: #616161;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-size: 7rem;
+    line-height: 840px;
+    background-color: rgba(0,0,0, 0);
+    transition: all .2s linear;
+} 
+
+.arrow_next {
+    color: #616161;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-size: 7rem;
+    line-height: 840px;
+    background-color: rgba(0,0,0, 0);
+    transition: all .2s linear;
+}
+
+.arrow_prev:hover, .arrow_next:hover {
+    background-color: rgba(0,0,0, 0.2);
+    color: #F5F5F5;
+    transition: all .2s linear;
+    cursor: pointer;
+} 
+
+/*Блок 4 - Описание*/
+
+.description_section {
+    background: #9E9E9E;
+    background: linear-gradient(45deg, #9E9E9E 0%, #F5F5F5 60%, #616161 100%);
+}
+
+.description_section .container {
+    position: relative;
+    min-height: 600px;
+}
+
+.description_title {
+    font-size: 1.5rem;
+}
+
+.prod_description {
+    max-width: 50%;
+    margin-top: 50px;
+    line-height: 1.5;
+}
+
+.quality {
+    margin: 40px 0;
+    max-width: 50%;
+    justify-content: space-between;
+}
+
+.quality_item:not(:first-child) {
+    margin-left: 70px;
+}
+
+.quality_item {
+    display: flex;
+    height: 2rem;
+    align-items: center;
+}
+
+.quality_item img {
+    width: auto;
+    height: 1.3rem;
+}
+
+.quality_text {
+    font-size: 1.3rem;
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: 15px;
+} 
+
+.doctor_photo {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Блок 5 - Заявка*/
+
+.order_section {
+    position: relative;
+}
+
+.order_background {
+    background-image: url(../images/order_bg.jpg);
+}
+
+.order_title {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 auto;
+}
+
+.timer_wrap {
+    text-align: center;
+    margin: 50px auto 100px;
+}
+
+.timer_title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.timer_text {
+    font-size: 2.5rem;
+}
+
+.time_label {
+    font-size: 2rem;
+}
+
+.order {
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.order_photo {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.last_price {
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.last_price::after, .last_price::before  {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 5px;
+    background-color: red;
+    transform: rotate(10deg);
+}
+
+.last_price::before {
+    transform: rotate(-10deg);
+}
+
+.new_price {
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 1.2;
+    animation: price_animation infinite 2s linear;
+}
+
+.form {
+    margin-left: 300px;
+    padding: 20px;
+    border: solid 1px  #9E9E9E;
+    border-radius: 5px;
+}
+
+.form_title {
+    font-size: 1.5rem;
+}
+
+input {
+    font-size: 1rem;
+    display: block;
+    height: 2.5rem;
+    width: 100%;
+    padding-left: 10px;
+    border: solid 1px  #9E9E9E;
+    margin: 30px 0;
+    background: rgba(255, 255, 255, 0);
+}
+
+input:focus {
+    border: solid 1px #616161;
+}
+
+.name, .phone {
+    position: relative;
+    z-index: -1;
+}
+
+.name::after {
+    content: 'Имя *';
+    width: max-content;
+    font-size: 1rem;
+    color: #9E9E9E;
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    transform: translate(0, -50%);
+    transition: all .3s linear;
+}
+
+input:focus + .name::after, input:valid + .name::after {
+    content: '* Иванов Иван';
+    font-size: 0.8rem;
+    left: 100%;
+    top: -45px;
+    transform: translate(-105%, 0);
+    transition: all .3s linear;
+}
+
+.phone::after {
+    content: 'Телефон *';
+    width: max-content;
+    font-size: 1rem;
+    color: #9E9E9E;
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    transform: translate(0, -50%);
+    transition: all .3s linear;
+}
+
+input:focus + .phone::after, input:valid + .phone::after {
+    content: '* 89001223334';
+    font-size: 0.8rem;
+    left: 100%;
+    top: -45px;
+    transform: translate(-105%, 0);
+    transition: all .3s linear;
+}
