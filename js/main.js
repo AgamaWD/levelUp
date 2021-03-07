@@ -40,9 +40,9 @@ arrow_prev.onclick = function(){
             
     slides[i].style.display = 'block';
 }
-        /*Слайдер - end*/
+/*Слайдер - end*/
 
-        /*Таймер - start*/   
+/*Таймер - start*/   
 document.addEventListener('DOMContentLoaded', function(){     
     var endTime = new Date().getTime() + 1000*3600;
  

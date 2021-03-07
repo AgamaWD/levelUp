@@ -1,11 +1,3 @@
-/*.dark-primary-color    { background: #616161; }
-.default-primary-color { background: #9E9E9E; }
-.light-primary-color   { background: #F5F5F5; }
-КНОПКИ/АКЦЕНТЫ        { background: #E040FB; }
-Тёмный текст   { color: #212121; }
-Серый текст  { color: #757575; }
-выделение элементов       { border-color: #BDBDBD; }*/
-
 /*Анимация новой цены*/
 @keyframes price_animation {
     0% {
